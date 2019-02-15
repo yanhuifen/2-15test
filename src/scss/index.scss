@@ -35,5 +35,48 @@
         width: 100%;
         height: 100%;
         background: #eee;
+        p {
+            width: 100%;
+            height: pxTorem(70px);
+            border-bottom: pxTorem(1px) solid #ccc;
+            @include box_flex;
+            @include justify(space-around);
+            @include align;
+            span {
+                padding: pxTorem(10px) pxTorem(15px);
+                border: pxTorem(2px) solid #00C3B1;
+                border-radius: pxTorem(25px);
+                color: #00C3B1;
+            }
+        }
+        .swiper-container {
+            width: 100%;
+            height: pxTorem(200px);
+            .swiper-wrapper {
+                width: 100%;
+                height: 100%;
+                .swiper-slide {
+                    width: 100%;
+                    height: 100%;
+                    @include box_flex;
+                    @include flexWrap;
+                    dl {
+                        width: 20%;
+                        height: pxTorem(80px);
+                        @include box_flex;
+                        @include direction(column);
+                        @include align;
+                        dt {
+                            width: pxTorem(50px);
+                            height: pxTorem(50px);
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
